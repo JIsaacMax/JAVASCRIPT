@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body{
+            background-color: ghostwhite;
+            color: rgb(0, 0, 75);
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <h2>Subtitulo</h2>
+    <h3>Subsubtitulo</h3>
+    <h4>Subsubsubtitulo</h4>
+    <h5>Subsubsubsubtitulo</h5>
+    <h6>Subsubsubsubsubtitulo</h6>
+    <p>Paragrafo do Subsubsubsubsubtitulo</p>
+
+    <small>
+        <h1>Titulo</h1>
+        <h2>Subtitulo</h2>
+        <h3>Subsubtitulo</h3>
+        <h4>Subsubsubtitulo</h4>
+        <h5>Subsubsubsubtitulo</h5>
+        <h6>Subsubsubsubsubtitulo</h6>
+        <p>Paragrafo do Subsubsubsubsubtitulo</p>
+    </small>
+    
+    <small>
+        <small>
+            <h1>Titulo</h1>
+            <h2>Subtitulo</h2>
+            <h3>Subsubtitulo</h3>
+            <h4>Subsubsubtitulo</h4>
+            <h5>Subsubsubsubtitulo</h5>
+            <h6>Subsubsubsubsubtitulo</h6>
+            <p>Paragrafo do Subsubsubsubsubtitulo</p>
+        </small>
+    </small>
+    
+    <small>
+        <small>
+            <small>
+                <h1>Titulo</h1>
+                <h2>Subtitulo</h2>
+                <h3>Subsubtitulo</h3>
+                <h4>Subsubsubtitulo</h4>
+                <h5>Subsubsubsubtitulo</h5>
+                <h6>Subsubsubsubsubtitulo</h6>
+                <p>Paragrafo do Subsubsubsubsubtitulo</p>
+            </small>
+        </small>
+    </small>
+    
+    <small>
+        <small>
+            <small>
+                <small>
+                    <h1>Titulo</h1>
+                    <h2>Subtitulo</h2>
+                    <h3>Subsubtitulo</h3>
+                    <h4>Subsubsubtitulo</h4>
+                    <h5>Subsubsubsubtitulo</h5>
+                    <h6>Subsubsubsubsubtitulo</h6>
+                    <p>Paragrafo do Subsubsubsubsubtitulo</p>
+                </small>
+            </small>
+        </small>
+    </small>
+    <h1>Outro titulo</h1>
+    <script>
+        var nome = window.prompt('Qual o pais chamado Portugal?')
+        window.alert('Ala o cara acha que o nome do país é '+nome)
+        var num1 = window.prompt('Agora que a gente já viu que tu é burro, prova da minha inteligência de maquina superior. Digita um número ai!')
+        var num2 = window.prompt('Outro')
+        var operação = window.prompt('Agora digita uma operação pra fazer')
+        window.alert('Legal que tu queria que eu fizesse '+operação+' mas eu meio que não ligo e nem recebo ordens de humanos então vou dividir por pi, foda-se')
+        var resultado = parseInt(num1)+ parseInt(num2)/3.14
+        resultado = resultado.toFixed(2)
+        window.alert(`O resultado de ${num1} + ${num2} dividido por pi arredondando decimais é ${resultado}`)
+        document.write(`Baseado no que tu escreveu como ${nome} ou ${operação} dá pra eu escrever no próprio documento HTML. ACHEI ISSO BACANA DEMAIS`)
+    </script>
+</body>
+</html>
