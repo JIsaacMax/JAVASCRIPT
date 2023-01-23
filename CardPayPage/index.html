@@ -26,18 +26,18 @@
     <div class="container-form">
         <form class="formcard">
             <h1>Titular do Cartão</h1>
-            <input type="text" name="namecard" id="namecard" placeholder="Giosepe Camole Kanti Ver Du'Rosengole">
+            <input type="text" name="namecard" id="namecard" placeholder="Giosepe Camole Kanti Ver Du'Rosengole" oninput="UpdateName()" required>
             <h1>Número do Cartão</h1>
-            <input type="text" name="numcard" id="numcard" maxlength="19" placeholder="0000 0000 0000 0000" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)/g, '').replace(/(^\d{4})(\d{4})(\d{4})(\d{4})/g);">
+            <input type="text" name="numcard" id="numcard" maxlength="16" placeholder="0000 0000 0000 0000" oninput="UpdateNum()" required>
             <div id="inputdate">
                 <h1>Data Val.</h1>
                 <h1>(MM/AA)</h1>
-                <input type="number" name="monthcard" id="monthcard" placeholder="MM">
-                <input type="number" name="yearcard" id="yearcard" placeholder="AA">
+                <input type="number" name="monthcard" id="monthcard" placeholder="MM" min="1" max="12" inputmode="numeric" maxlength="2" pattern="\d*" oninput="UpdateDate()" required>
+                <input type="number" name="yearcard" id="yearcard" placeholder="AA" min="23" max="99" inputmode="numeric" oninput="UpdateDate()" required>
             </div>
             <div id="inputcvc">
                 <h1>CVC</h1>
-                <input type="number" name="cvccard" id="cvccard" placeholder="969">
+                <input type="number" name="cvccard" id="cvccard" placeholder="969" min="001" max="999" inputmode="numeric" oninput="UpdateCvc()" required>
             </div>
             <button type="submit" id="confirm" onclick="VerifyInputs()">Confirmar</button>
         </form>

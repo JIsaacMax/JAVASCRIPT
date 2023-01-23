@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100;200;300;400;500;600;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --corDestaque: #E9C46A;
+    --corNeutra: #264653;
+    --corAzul: #2A9D8F;
+    --corWhite: #FAFAFA;
+    --corBg: #211F21;
+    --corBlack: #060606;
+
+    --font: 'M PLUS Code Latin', sans-serif;
+    --fontDestaque: 'Source Code Pro', monospace;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.menu-nav {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    background-color: var(--corBlack);
+    justify-content: center;
+    padding: 0;
+}
+
+.menu-nav a {
+    color: var(--corAzul);
+    text-decoration: none;
+    font-family: var(--fontDestaque);
+    padding: 1rem 0;
+    margin: 0 1rem;
+}
+
+.menu-nav a:hover {
+    border-bottom: 2px solid var(--corDestaque);
+}
+
+.container-content {
+    perspective: 1500px;
+    width: 100vw;
+    height: 96%;
+    background-color: var(--corBg);
+    background-image: url("../src/images/BGIMGABSTRACT.jpeg");
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.scroll-story {
+    padding: 1rem;
+    overflow-y: scroll;
+    height: 25rem;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    background-color: var(--corBlack);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--corDestaque);
+    border-radius: 1rem;
+}

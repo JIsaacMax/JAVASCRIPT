@@ -1,0 +1,20 @@
+iframe{
+    width: 48%;
+    height: 48%;
+    border-radius: 1rem;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    row-gap: 2%;
+    padding: 4rem;
+    width: 94vw;
+    height: 94vh;
+    background-color: #0C0C0CAC;
+    border-radius: 4rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
